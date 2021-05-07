@@ -97,7 +97,8 @@ dependencies {
         exclude("com.sk89q.worldedit.worldedit-libs", "core")
     }
     compileOnly("net.kyori:adventure-api:4.7.0")
-    testCompileOnly("net.kyori:adventure-api:4.7.0")
+    testImplementation("net.kyori:adventure-api:4.7.0")
+    testImplementation("net.md-5:bungeecord-chat:1.16-R0.4")
     api("com.intellectualsites.paster:Paster:1.0.1-SNAPSHOT")
     // Third party
     implementation("org.bstats:bstats-bukkit:2.2.1")
