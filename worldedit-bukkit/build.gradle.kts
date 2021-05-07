@@ -97,8 +97,6 @@ dependencies {
     }
     compileOnly("net.kyori:adventure-api:4.7.0")
     testImplementation("net.kyori:adventure-api:4.7.0")
-    testImplementation("net.md-5:bungeecord-chat:1.16-R0.4")
-    testImplementation("org.jetbrains:annotations:20.1.0")
     testImplementation("org.spigotmc:spigot:1.16.5-R0.1-SNAPSHOT")
     api("com.intellectualsites.paster:Paster:1.0.1-SNAPSHOT")
     // Third party
