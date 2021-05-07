@@ -97,9 +97,9 @@ dependencies {
     }
     compileOnly("net.kyori:adventure-api:4.7.0")
     testImplementation("net.kyori:adventure-api:4.7.0")
+    testImplementation("org.checkerframework:checker-qual:3.13:0")
     testImplementation("org.spigotmc:spigot-api:1.16.2-R0.1-SNAPSHOT") {
         isTransitive = true
-        exclude("org.jetbrains:annotations:*")
     }
     api("com.intellectualsites.paster:Paster:1.0.1-SNAPSHOT")
     // Third party
