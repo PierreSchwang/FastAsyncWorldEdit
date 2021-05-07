@@ -55,7 +55,7 @@ allprojects {
         }
         tasks.withType(Test::class) {
             testLogging {
-                events(SKIPPED, PASSED, FAILED)
+                events(FAILED)
                 exceptionFormat = FULL
                 showExceptions = true
                 showCauses = true
