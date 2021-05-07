@@ -28,7 +28,6 @@ public class MinecraftVersionTest {
         assertTrue(latestVersion.isEqualOrHigher(new MinecraftVersion(1, 16)));
     }
 
-
     @Test
     public void testEqual() {
         assertTrue(latestVersion.isEqual(new MinecraftVersion(1, 16, 3)));
@@ -41,6 +40,12 @@ public class MinecraftVersionTest {
         assertTrue(latestVersion.isEqualOrLower(new MinecraftVersion(1, 16, 3)));
         assertTrue(latestVersion.isEqualOrLower(new MinecraftVersion(1, 16, 4)));
         assertFalse(latestVersion.isEqualOrLower(new MinecraftVersion(1, 16, 2)));
+    }
+
+    @Test
+    public void testForChunkStretched() {
+        assertTrue(latestVersion.isEqualOrHigher(MinecraftVersion.NETHER));
+        assertFalse(latestVersion.isLower(new MinecraftVersion(1, 14, 2)));
     }
 
 }
